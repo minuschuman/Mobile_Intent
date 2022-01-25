@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Lab:2 Intent"
+        android:id="@+id/header"
+        android:textSize="40sp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implicit "
+        android:id="@+id/btnImplicit"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit"
+        android:layout_below="@+id/btnImplicit"
+        android:id="@+id/btnExplicit"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass value to explicit "
+        android:id="@+id/btnPassExplicit"
+        android:layout_below="@+id/btnExplicit"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        />
+</RelativeLayout>
